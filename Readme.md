@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Кольцова](https://up.htmlacademy.ru/htmlcss/36/user/2274821).
-* Наставник: `Ирина Малиновская`.
+* Наставник: `Ирина Малиновская`.(https://htmlacademy.ru/profile/irina-malinovskaya)
 
 ---
 
