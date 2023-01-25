@@ -114,15 +114,17 @@
           <option value="cheap" selected>Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="view-button view-button-current">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="view-button">
-          <span class="visually-hidden">Показать одну карточку с описанием</span>
-        </a>
-        <a href="#" class="view-button">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="view-button-list">
+          <a href="#" class="view-button view-button-current">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="view-button">
+            <span class="visually-hidden">Показать одну карточку с описанием</span>
+          </a>
+          <a href="#" class="view-button">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
       </section>
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Результаты поиска</h2>
@@ -216,7 +218,7 @@
             <span class="visually-hidden">E-mail</span>
           </label>
           <input class="field" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail" required>
-          <button class="buttom subscribe-button">Подписаться</button>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
