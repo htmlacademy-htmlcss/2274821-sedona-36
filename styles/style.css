@@ -16,10 +16,16 @@
 
 body{
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   color: #333333;
   background-color: #FFFFFF;
+}
+
+.container{
+  background-color:#FFFFFF ;
 }
 
 .navigation-list{
@@ -49,8 +55,172 @@ body{
   color:#FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
+  border-width: 0;
+  border-radius: 4px;
 }
 
 .navigation-button{
   background-color:#756157;
+}
+
+.hero{
+  background-image: url("../images/index-background.jpg");
+  color:#FFFFFF;
+  background-color:#000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.hero-container{
+  width:1200px;
+  height:485px;
+}
+
+.center{
+  text-align: center;
+}
+
+.slogan,
+.search-hotel-title,
+.subscribe-title{
+  font-size:30px;
+  line-height: 36px;
+  font-weight: 700;
+  color:#000000;
+  background-color:#FFFFFF;
+  text-transform: uppercase;
+}
+
+.slogan-text,
+.search-hotel-text,{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-image-container{
+  width:800px;
+  height:385px;
+}
+
+.advantages-list{
+  text-align: center;
+  list-style-type:none;
+}
+
+.advantages-title,
+.services-title{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color:#000000;
+  background-color:#FFFFFF;
+  text-transform: uppercase;
+}
+
+.services-list{
+  list-style-type:none;
+}
+
+.services-house{
+  background-image:url("../images/icons/services-house.svg");
+  background-size:75px 72px;
+  background-repeat: no-repeat;
+}
+
+.services-food{
+  background-image:url("../images/icons/services-food.svg");
+  background-size:74px 70px;
+  background-repeat: no-repeat;
+}
+
+.services-souvenir{
+  background-image:url("../images/icons/services-souvenir.svg");
+  background-size:74px 70px;
+  background-repeat: no-repeat;
+}
+
+.blue{
+  background-color:rgba(131, 179, 211, 0.12);
+}
+
+.search-hotel{
+  width: 100%;
+  height: 406px;
+}
+
+.search-hotel-button{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color:#FFFFFF;
+  background-color:#756157;
+}
+
+.subscribe{
+  color:#FFFFFF;
+  background-color:#000000;
+  height: 415px;
+  background-image: url("../images/subscribe-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.subscribe-text{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.field{
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.subscribe-button{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.footer-social-list{
+  text-align: center;
+  list-style-type:none;
+}
+.vkontakte{
+  background-image: url("../images/icons/vk-icon.svg");
+  background-size: 24px 14px;
+  background-repeat: no-repeat;
+}
+
+.telegram{
+  background-image: url("../images/icons/telegram-icon.svg");
+  background-size: 18px 15px;
+  background-repeat: no-repeat;
+}
+
+.youtube{
+  background-image: url("../images/icons/youtube-icon.svg");
+  background-size: 22px 17px;
+  background-repeat: no-repeat;
+}
+
+.footer-contacts-address{
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+}
+
+.footer-contacts-address a{
+  color:#000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
 }
