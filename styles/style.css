@@ -63,6 +63,13 @@ body{
   background-color:#756157;
 }
 
+.navigation-link-current{
+  text-decoration: underline #756257 solid 2px;
+  text-underline-offset: 21px;
+  text-underline-position: under;
+
+}
+
 .hero{
   background-image: url("../images/index-background.jpg");
   color:#FFFFFF;
@@ -192,9 +199,9 @@ body{
 }
 
 .footer-social-list{
-  text-align: center;
   list-style-type:none;
 }
+
 .vkontakte{
   background-image: url("../images/icons/vk-icon.svg");
   background-size: 24px 14px;
@@ -223,6 +230,11 @@ body{
   color:#000000;
   background-color: #FFFFFF;
   text-decoration: none;
+  text-align: center;
+}
+
+.footer-contacts{
+  text-align: center;
 }
 
 .main-inner{
