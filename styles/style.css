@@ -21,7 +21,7 @@ body{
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 .container{
@@ -81,6 +81,9 @@ body{
 .hero-container{
   width:1200px;
   height:485px;
+  background-image: url("../images/index-background-figure.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .center{
@@ -122,6 +125,19 @@ body{
   color:#000000;
   background-color:#FFFFFF;
   text-transform: uppercase;
+}
+
+.dark-blue{
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.blue{
+  background-color:rgba(131, 179, 211, 0.2);
+}
+
+.light-blue{
+  background-color:rgba(131, 179, 211, 0.1) ;
 }
 
 .services-list{
@@ -328,7 +344,7 @@ body{
 }
 
 .hotel-card a{
-  text-align: right;
+  text-align: left;
   text-decoration: none;
   color:#000000;
   background-color: #FFFFFF;
@@ -342,7 +358,7 @@ body{
   text-align: left;
 }
 
-.hotel-card a{
+li a:nth-of-type(2){
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
