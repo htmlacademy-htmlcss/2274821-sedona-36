@@ -38,7 +38,7 @@ body{
 
 .container{
   background-color:#FFFFFF;
-  margin:0 40px;
+  margin:0 auto;
 }
 
 .page-header{
@@ -80,6 +80,7 @@ body{
 .navigation-user{
   max-width:300px;
   margin-left: auto;
+  margin-right: 70px;
 }
 
 .visually-hidden {
@@ -117,6 +118,10 @@ body{
   background-color: #7DB54F;
 }
 
+.main-index{
+  width:1200px;
+  margin:0 auto;
+}
 
 .hero{
   background-image: url("../images/index-background.jpg");
@@ -151,14 +156,22 @@ body{
   line-height: 26px;
 }
 
+.advantages-list{
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  list-style-type:none;
+}
+
+.advantages-item{
+  width:400px;
+}
+
 .advantages-image-container{
   width:800px;
   height:385px;
-}
-
-.advantages-list{
-  text-align: center;
-  list-style-type:none;
 }
 
 .advantages-title,
@@ -184,6 +197,9 @@ body{
 }
 
 .services-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style-type:none;
 }
 
@@ -206,7 +222,7 @@ body{
 }
 
 .search-hotel{
-  width: 100%;
+  width: 1200px;
   height: 406px;
 }
 
@@ -259,6 +275,22 @@ body{
   border-radius: 0 4px 4px 0;
 }
 
+.page-footer{
+  display:flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.footer-social{
+  width: 170px;
+  margin-right: auto;
+}
+
+.footer-creator-image{
+  width: 115px;
+  margin-left: auto;
+}
+
 .footer-social-list{
   list-style-type:none;
 }
@@ -294,7 +326,8 @@ body{
 }
 
 .footer-contacts{
-  text-align: center;
+  width:331px;
+  margin:0 auto;
 }
 
 .inner-container{
@@ -325,6 +358,9 @@ body{
   font-size: 16px;
   text-decoration: none;
 }
+.hotels-filter{
+  display:flex;
+}
 
 .hotels-filter-title{
   font-size: 20px;
@@ -341,8 +377,21 @@ body{
   background-color: transparent;
 }
 
+.view-filter{
+  width: 1060px;
+  display:flex;
+  margin:0 auto;
+  justify-content: space-between;
+}
+
 .select-control{
   font-size: 18px;
+  margin-left: auto;
+  margin-right:70px;
+}
+
+.view-button-list{
+  width: 160px;
 }
 
 .view-1{
@@ -372,6 +421,17 @@ body{
 
 .hotel-list{
   list-style-type:none;
+  width: 1060px;;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.hotel-card{
+  width:340px;
+  border:1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotel-card-title{
