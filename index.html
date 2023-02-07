@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="container">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="logo">
         <img src="images/logo.svg" width="140" height="70" alt="Логотип Sedona.">
       </a>
@@ -41,8 +41,8 @@
       </ul>
       </nav>
     </header>
-    <main class="main-index main-conteiner">
-      <section class="hero">
+    <main class="main-index main-conteiner" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Сайт города Седона</h1>
         <figure class="hero-container">
           <img class="hero-text" src="images/welcome-text.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks.">
@@ -53,7 +53,7 @@
         <b class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
         <p class="slogan-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section class="advantages center">
+      <section class="advantages center" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item dark-blue">
@@ -107,13 +107,13 @@
           </li>
         </ul>
       </section>
-      <section class="search-hotel center">
+      <section class="search-hotel center" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <b class="search-hotel-title">Заинтересовались?</b>
         <p class="search-hotel-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button search-hotel-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe center">
+      <section class="subscribe center" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -125,7 +125,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Город Седона в социальных сетях</h2>
         <ul class="footer-social-list">
