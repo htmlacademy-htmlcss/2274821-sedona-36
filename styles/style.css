@@ -42,29 +42,21 @@ body{
 .main-conteiner{
   flex-grow:1;
 }
-
+/* header */
 .page-header{
-  display:flex;
-  width:1200px;
+  width:1060px;
   margin:0 auto;
+  display:flex;
 }
 
 .logo{
-  display:block;
-  margin-left: 70px;
-  margin-right: 44px;
+  margin-right:44px;
 }
 
 .navigation{
   display: flex;
   width:946px;
   margin:0 auto;
-}
-
-.navigation-list{
-  margin:0;
-  padding:0;
-  list-style-type:none;
 }
 
 .navigation-link{
@@ -75,14 +67,19 @@ body{
   text-decoration: none;
 }
 
+.navigation-list{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+
 .navigation-menu{
-  width:440px;
+  width:430px;
 }
 
 .navigation-user{
-  max-width:300px;
+  width:320px;
   margin-left: auto;
-  margin-right: 70px;
 }
 
 /*.visually-hidden {
@@ -129,11 +126,13 @@ body{
   background-color: #7DB54F;
 }
 
+/* main */
 .main-index{
   width:1200px;
   margin:0 auto;
 }
 
+/* main-index-html */
 .hero{
   background-image: url("../images/index-background.jpg");
   color:#FFFFFF;
@@ -174,7 +173,7 @@ body{
   display:flex;
   flex-wrap: wrap;
   text-align: center;
-  list-style-type:none;
+  list-style:none;
 }
 
 .advantages-item{
@@ -213,6 +212,10 @@ body{
   padding: 0;
   display: flex;
   list-style-type:none;
+}
+
+.services-item{
+  width:400px;
 }
 
 .services-house{
@@ -287,24 +290,12 @@ body{
   border-radius: 0 4px 4px 0;
 }
 
+/* footer */
 .page-footer{
   display:flex;
   width: 1060px;
   margin: 0 auto;
-}
-
-.footer-social{
-  width: 170px;
-  margin-right: auto;
-}
-
-.footer-creator-image{
-  width: 115px;
-  margin-left: auto;
-}
-
-.footer-social-list{
-  list-style-type:none;
+  justify-content: space-between;
 }
 
 .vkontakte{
@@ -334,12 +325,23 @@ body{
   text-align: center;
 }
 
-.footer-contacts{
-  width:331px;
-  margin:0 auto;
+.footer-social-list{
+  list-style-type:none;
 }
 
+.footer-social{
+  width: 170px;
+}
 
+.footer-contacts{
+  width:331px;
+}
+
+.footer-creator-image{
+  width: 115px;
+}
+
+/* main-hotels-html */
 .inner-container{
   color:#FFFFFF;
   background-color: #3e75a0;
@@ -348,7 +350,7 @@ body{
   background-repeat: no-repeat;
 }
 
-.inner-heder-text-container{
+.inner-heder-filter-container{
   width:1060px;
   margin:0 auto;
 }
@@ -374,6 +376,7 @@ body{
   text-decoration: none;
 }
 
+/* hotels-filter */
 .hotels-filter{
   display:flex;
 }
@@ -384,7 +387,24 @@ body{
   font-weight: 700;
 }
 
-.radio-item{
+.hotels-filter-group{
+  width:151px;
+}
+
+.comfort{
+  margin-right:70px;
+}
+
+.type-house{
+  margin-right: 140px;
+}
+
+.hotels-filter-group-price{
+  width:288px;
+}
+
+.radio-item,
+.checkbox-item{
   line-height: 23px;
 }
 
@@ -393,10 +413,11 @@ body{
 }
 
 .view-filter{
-  width: 1060px;
+  width: 522px;
+  margin-left:auto;
   display:flex;
-  margin:0 auto;
-  justify-content: space-between;
+  margin-right:70px;
+
 }
 
 .select-control{
@@ -442,7 +463,6 @@ body{
 .hotel-list{
   list-style-type:none;
   padding: 0;
-  margin:0 auto;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
