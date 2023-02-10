@@ -97,16 +97,16 @@ body{
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   }
 
 .button{
@@ -205,7 +205,7 @@ body{
   display:flex;
   flex-wrap: wrap;
   text-align: center;
-  list-style:none;
+  list-style-type:none;
   margin-bottom: 64px;
 }
 
@@ -265,7 +265,6 @@ body{
   padding: 0;
   display: flex;
   list-style-type:none;
-  margin-bottom: 96px;
 }
 
 .slogan-services,
@@ -309,7 +308,8 @@ body{
 }
 
 .search-hotel{
-  padding:96px 304px;
+  padding-top:96px;
+  padding-bottom:96px;
 }
 
 .search-hotel-text{
@@ -328,22 +328,23 @@ body{
 .subscribe{
   color:#FFFFFF;
   background-color:#3e75a0;
-  height: 415px;
   background-image: url("../images/subscribe-image.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-top:96px;
+  padding-bottom:104px;
 }
 
 .subscribe-title{
   color:#FFFFFF;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .subscribe-text{
   font-size: 22px;
   line-height: 26px;
+  margin:0;
+  margin-bottom: 54px;
 }
 
 .field{
@@ -401,12 +402,27 @@ body{
   text-align: center;
 }
 
-.footer-social-list{
-  list-style-type:none;
+.page-footer{
+  padding-top:45px;
+  padding-bottom:35px;
 }
 
 .footer-social{
   width: 170px;
+}
+
+.footer-social-list{
+  display:flex;
+  flex-wrap:wrap;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.footer-social-item{
+  min-width: 18px;
+  min-height: 14px;
+  padding:13px 12px;
 }
 
 .footer-contacts{
@@ -415,6 +431,8 @@ body{
 
 .footer-creator-image{
   width: 115px;
+  display:block;
+  margin:auto 0;
 }
 
 /* main-hotels-html */
