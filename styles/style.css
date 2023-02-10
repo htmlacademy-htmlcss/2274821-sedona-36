@@ -126,6 +126,7 @@ body{
   text-decoration: none;
   padding:8px 34px;
 }
+
 .navigation-user-button{
   display:inline-block;
   margin:auto 0;
@@ -194,6 +195,10 @@ body{
   margin-bottom:25px;
 }
 
+.slogan-text-about{
+  margin-bottom: 90px;
+}
+
 .advantages-list{
   margin: 0;
   padding: 0;
@@ -204,12 +209,19 @@ body{
 }
 
 .advantages-item{
-  width:400px;
+  width:230px;
+  padding:102px 85px;
 }
 
 .advantages-image-container{
   width:800px;
   height:385px;
+  margin:0;
+}
+
+.advantages-item-container{
+  width:1200px;
+  display:flex;
 }
 
 .advantages-title,
@@ -219,12 +231,21 @@ body{
   font-weight: 700;
   color:#000000;
   text-transform: uppercase;
+  margin:0;
+  margin-bottom:62px;
+}
+
+.advantages-description{
+  margin:0;
 }
 
 .dark-blue{
   color: #FFFFFF;
   background-color: #82B3D3;
-  width:1200px;
+  padding:0;
+}
+.advantages-text-container{
+  padding:102px 85px;
 }
 
 .blue{
