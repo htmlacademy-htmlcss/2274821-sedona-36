@@ -54,6 +54,10 @@ body{
   margin-right:44px;
 }
 
+.logo-header{
+  display:block;
+}
+
 .navigation{
   display: flex;
   width:876px;
@@ -426,7 +430,7 @@ body{
 }
 
 .footer-contacts{
-  width:331px;
+  max-width:350px;
 }
 
 .footer-creator-image{
@@ -435,13 +439,17 @@ body{
   margin:auto 0;
 }
 
-/* main-hotels-html */
+/* hotels-html */
+/* main */
 .inner-container{
   color:#FFFFFF;
   background-color: #3e75a0;
   background-image: url("../images/hotels-filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding:70px;
+  padding-top:35px;
+  margin-bottom:50px;
 }
 
 .inner-heder-filter-container{
@@ -453,16 +461,31 @@ body{
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin:0;
+  margin-bottom:8px;
 }
 
 .breadcrumbs{
   list-style-type:none;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0;
+  padding:0;
+  margin-bottom:40px;
 }
 
 .main-icon{
   background-image: url("../images/icons/main-page-icon.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
+}
+
+.item-icon{
+  min-width: 12px;
+  min-height: 12px;
+  padding:1px;
+  padding-bottom:2px;
+  margin-right:28px;
 }
 
 .breadcrumbs-item a{
@@ -475,14 +498,25 @@ body{
   display:flex;
 }
 
+.hotels-filter-list{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
 .hotels-filter-title{
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding:0;
+  margin-bottom:32px;
 }
 
 .hotels-filter-group{
   width:151px;
+  margin:0;
+  padding:0;
+  border:0;
 }
 
 .comfort{
@@ -495,36 +529,72 @@ body{
 
 .hotels-filter-group-price{
   width:288px;
+  border:0;
+  margin:0;
+  padding:0;
+  margin-right:70px;
 }
 
 .radio-item,
 .checkbox-item{
   line-height: 23px;
+  margin-bottom:16px;
+}
+
+.filter-buton{
+  width:191px;
+}
+
+.hotels-filter-button{
+  display:inline-block;
+  padding:8px 50px;
+  text-align:center;
+}
+
+.select{
+  margin-bottom:32px;
 }
 
 .reset{
   background-color: transparent;
 }
 
+/* view-filter */
 .view-filter{
-  width: 522px;
   margin-left:auto;
   display:flex;
-  margin-right:70px;
-
 }
 
 .select-control{
   font-size: 18px;
   margin-left: auto;
   margin-right:70px;
+  padding:14px 131px 14px 20px;
+  border:2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
-.view-button-list{
-  width: 160px;
+.view-button-filter{
+  min-width:160px;
+  display:flex;
+  flex-wrap: wrap;
 }
 
-.view-1{
+.view-button-filter .view-button{
+  min-width: 16px;
+  min-height: 14px;
+  padding:17px 16px;
+  margin-right:8px;
+  border:2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.view-button-filter .view-button:last-child{
+  margin-right: 0;
+}
+
+/* Подготовила иконки для 8 раздела */
+/* .view-1{
   background-image: url("../images/icons/view-button-1.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
@@ -540,7 +610,7 @@ body{
   background-image: url("../images/icons/view-button-3.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
-}
+} */
 
 /* catalog-hotels */
 .catalog-hotels{
@@ -553,6 +623,7 @@ body{
   line-height: 36px;
   font-weight: 700;
   color:#000000;
+  margin-bottom:40px;
 }
 
 .hotel-list{
@@ -561,12 +632,19 @@ body{
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom:80px;
 }
 
 .hotel-card{
-  width:340px;
+  width:300px;
   border:1px solid #E6E6E6;
   border-radius: 4px;
+  padding:20px;
+  margin-bottom:20px;
+}
+
+.hotel-card:last-child{
+  margin-bottom: 0;
 }
 
 .hotel-card-title{
@@ -607,6 +685,10 @@ li a:nth-of-type(2){
 .pagination{
   width:1060px;
   margin:0 auto;
+  padding: 0;
+  display:flex;
+  list-style: none;
+  margin-bottom:60px;
 }
 
 .pagination-link{
@@ -616,6 +698,17 @@ li a:nth-of-type(2){
   text-align: center;
   color:#FFFFFF;
   background-color: #82B3D3;
+  border-radius: 4px;
+  display:block;
+  box-sizing:border-box;
+  width:60px;
+  height: 60px;
+  padding-top:11px;
+  padding-bottom:12px;
+}
+
+.pagination-item:not(:last-child){
+  margin-right: 8px;
 }
 
 .pagination-current{
@@ -630,10 +723,12 @@ li a:nth-of-type(2){
 
 .more-pages{
   color:#000000;
+  background-color: #FFFFFF;
+  padding-top:16px;
+  padding-bottom:17px;
 }
 
 /* subscribe-inner */
 .subscribe-inner{
-  height: 415px;
   color:#000000;
 }

@@ -11,7 +11,7 @@
     <div class="container">
       <header class="page-header" data-test="header">
         <a class="logo" href="index.html">
-          <img src="images/logo.svg" width="140" height="70" alt="Логотип Sedona.">
+          <img class="logo-header" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona.">
         </a>
         <nav class="navigation">
           <ul class="navigation-list navigation-menu">
@@ -49,8 +49,8 @@
             <header class="inner-header">
               <h1 class="inner-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
-                <li class="breadcrumbs-item main-icon">
-                  <a class="breadcrumbs-link" href="index.html">
+                <li class="breadcrumbs-item item-icon">
+                  <a class="breadcrumbs-link main-icon" href="index.html">
                     <span class="visually-hidden">Главная</span>
                   </a>
                 </li>
@@ -60,8 +60,7 @@
               </ul>
             </header>
             <section class="hotels-filter" data-test="filter">
-              <!--временно добавила атрибут hidden, чтобы заголовок не рушил сетку-->
-              <h2 class="visually-hidden" hidden>Фильтры</h2>
+              <h2 class="visually-hidden">Фильтры</h2>
               <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="hotels-filter-group comfort">
                   <legend class="hotels-filter-title">Инфраструктура</legend>
@@ -114,26 +113,28 @@
                   <input type="range" name="rating-min" min="0" max="9000" step="1" value="0">
                   <input type="range" name="rating-max" min="0" max="9000" step="1" value="9000">
                 </fieldset>
-                <button class="button hotels-filter-button" type="submit">Применить</button>
-                <button class="button reset" type="reset">Сбросить</button>
+                <div class="filter-buton">
+                  <button class="button hotels-filter-button select" type="submit">Применить</button>
+                  <button class="button hotels-filter-button reset" type="reset">Сбросить</button>
+                </div>
               </form>
             </section>
           </div>
         </div>
-        <div class="view-filter">
+        <div class="view-filter catalog-hotels">
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярные</option>
             <option value="cheap" selected>Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <div class="view-button-list">
-            <a href="#" class="view-button view-button-current  view-1">
+          <div class="view-button-filter">
+            <a href="#" class="view-button view-button-current view-1">
               <span class="visually-hidden">Показать карточки</span>
             </a>
             <a href="#" class="view-button view-2">
               <span class="visually-hidden">Показать одну карточку с описанием</span>
             </a>
-            <a href="#" class="view-button  view-3">
+            <a href="#" class="view-button view-3">
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -216,8 +217,8 @@
                 <span class="visually-hidden">Четвертая страница</span>
               </a>
             </li>
-            <li class="pagination-item more-pages">
-              <span class="more-pages">...</span>
+            <li class="pagination-item">
+              <span class="pagination-link more-pages">...</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10
