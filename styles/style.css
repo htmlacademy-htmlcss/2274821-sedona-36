@@ -518,7 +518,7 @@ body{
 }
 
 .hotels-filter-group{
-  width:151px;
+  width:150px;
   margin:0;
   padding:0;
   border:0;
@@ -538,6 +538,7 @@ body{
   margin:0;
   padding:0;
   margin-right:70px;
+  flex-shrink: 0;
 }
 
 .radio-item,
