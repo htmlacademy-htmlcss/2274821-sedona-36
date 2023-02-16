@@ -52,7 +52,7 @@ body{
 }
 
 .logo{
-  margin-right:44px;
+  margin-right:28px;
 }
 
 .logo-header{
@@ -61,7 +61,7 @@ body{
 
 .navigation{
   display: flex;
-  width:876px;
+  width:892px;
   margin:0 auto;
 }
 
@@ -79,12 +79,12 @@ body{
   font-weight: 700;
   color:#000000;
   text-decoration: none;
-  padding:16px 20px;
+  padding:20px 16px;
   display:block;
 }
 
 .navigation-menu{
-  max-width:526px;
+  max-width:542px;
 }
 
 .navigation-user{
@@ -139,7 +139,7 @@ body{
 
 .navigation-link-current{
   text-decoration: underline #756257 solid 2px;
-  text-underline-offset: 21px;
+  text-underline-offset: 20px;
   text-underline-position: under;
 }
 
@@ -666,7 +666,7 @@ body{
   padding:20px;
   display:grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: repeat(3, min-content) 37px;
+  grid-template-rows: auto repeat(2, min-content) 37px;
   grid-column-gap:20px;
   grid-row-gap:16px;
 }
@@ -675,6 +675,7 @@ body{
   grid-column: 1/-1;
   display:grid;
   gap:16px;
+  align-content:start;
 }
 
 .hotel-card-price{
@@ -744,7 +745,7 @@ li a:nth-of-type(2){
   border-radius: 4px;
   display:block;
   box-sizing:border-box;
-  width:60px;
+  min-width:60px;
   height: 60px;
   padding-top:11px;
   padding-bottom:12px;
