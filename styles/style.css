@@ -213,6 +213,7 @@ body{
   display:grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: repeat(3, min-content);
+  grid-auto-flow:row dense;
 }
 
 .advantages-item-block{
