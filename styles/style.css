@@ -125,12 +125,17 @@ body{
   text-transform: uppercase;
   border-width: 0;
   border-radius: 4px;
+  cursor:pointer;
+  box-sizing: border-box;
+  padding:8px;
 }
 
 .navigation-button{
   background-color:#756157;
   text-decoration: none;
-  padding:8px 34px;
+  padding:8px;
+  width:160px;
+  text-align: center;
 }
 
 .navigation-user-button{
@@ -218,7 +223,8 @@ body{
 
 .advantages-item-block{
   box-sizing: border-box;
-  padding:102px 85px;
+  padding:102px 20px;
+  width: 400px;
 }
 
 .advantages-item-container{
@@ -246,12 +252,14 @@ body{
   margin:0;
 }
 
+.advantages-description,
 .advantages-title{
-  margin-bottom:62px;
+  max-width:230px;
+  margin:0 auto;
 }
 
-.advantages-description{
-  margin:0;
+.advantages-title{
+  margin-bottom:62px;
 }
 
 .dark-blue{
@@ -325,12 +333,15 @@ body{
 }
 
 .search-hotel-button{
+  display: block;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   background-color:#756157;
   text-decoration: none;
-  padding:8px 50px;
+  width:376px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .subscribe{
@@ -377,7 +388,7 @@ body{
   line-height: 36px;
   font-weight: 700;
   border-radius: 0 4px 4px 0;
-  padding:8px 50px;
+  width:232px;
 }
 
 .subscribe-form{
@@ -565,8 +576,8 @@ body{
 
 .hotels-filter-button{
   display:inline-block;
-  padding:8px 50px;
   text-align:center;
+  width:191px;
 }
 
 .select{
@@ -681,18 +692,11 @@ body{
 
 .hotel-card-button{
   text-align:center;
-  padding:8px 0px;
-  /* Как правильно задавать паддинги? Все или только сверху и снизу? */
-}
-
-.favorites{
-  padding:8px 0px;
 }
 
 .hotel-card-rating{
   text-align: center;
-  padding-top:9px;
-  padding-bottom: 8px;
+  padding:8px;
 }
 
 .hotel-card-title{
@@ -744,7 +748,7 @@ li a:nth-of-type(2){
   box-sizing:border-box;
   min-width:60px;
   height: 60px;
-  padding:11px 10px 12px 10px;
+  padding:10px;
 }
 
 .pagination-item:not(:last-child){
