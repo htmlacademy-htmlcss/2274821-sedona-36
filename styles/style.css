@@ -37,6 +37,7 @@ body{
   margin:0 auto;
   width: 1200px;
   min-height: 100%;
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-conteiner{
@@ -674,16 +675,17 @@ body{
   padding:20px;
   display:grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: auto repeat(2, min-content) 37px;
   grid-column-gap:20px;
   grid-row-gap:16px;
 }
 
 .hotel-card-link{
   grid-column: 1/-1;
-  display:grid;
-  gap:16px;
-  align-content:start;
+}
+
+.hotel-card-image{
+  object-fit: contain;
+  margin-bottom:16px;
 }
 
 .hotel-card-price{
