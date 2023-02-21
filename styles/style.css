@@ -107,8 +107,9 @@ body{
   background-image: url("../images/icons/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width:18px;
-  height:18px;
+  /* width:18px;
+  height:18px; */
+  background-size: 18px 18px;
   padding:23px 13px;
 }
 
@@ -116,8 +117,9 @@ body{
   background-image: url("../images/icons/favorites.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width:18px;
-  height:17px;
+  /* width:18px;
+  height:17px; */
+  background-size: 18px 17px;
   padding:23px 12px;
   margin-right:20px;
 }
@@ -477,6 +479,7 @@ body{
 
 .footer-creator-image{
   width: 115px;
+  display: flex;
 }
 
 .academy-logo{
