@@ -51,11 +51,14 @@ body{
   margin:0 auto;
   display:flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .logo{
+  width:140px;
   margin-right:28px;
 }
+
 
 .logo-header{
   display:block;
@@ -141,9 +144,8 @@ body{
   line-height: 20px;
   font-weight: 700;
   color:#FFFFFF;
-  background-color: #82B3D3;
   text-transform: uppercase;
-  border-width: 0;
+  border:none;
   border-radius: 4px;
   cursor:pointer;
   box-sizing: border-box;
@@ -151,12 +153,62 @@ body{
   display:inline-block;
 }
 
+.button-blue{
+  background-color: #82B3D3;
+}
+
+.button-blue:hover{
+  background-color: #68A2CA;
+}
+
+.button-blue:focus{
+  background-color: #68A2CA;
+}
+
+.button-blue:active{
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown{
+  background-color:#756157;
+}
+
+.button-brown:hover{
+  background-color: #615048;
+}
+
+.button-brown:focus{
+  background-color: #615048;
+}
+
+.button-brown:active{
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.current-green-button{
+  background-color: #7DB54F;
+}
+
+.current-green-button:hover{
+  background-color: #6C9E42;
+}
+
+.current-green-button:focus{
+  background-color: #6C9E42;
+}
+
+.current-green-button:active{
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .navigation-user-button{
   display: flex;
 }
 
 .navigation-button{
-  background-color:#756157;
   text-decoration: none;
   padding:8px;
   width:160px;
@@ -193,6 +245,7 @@ body{
   padding-top:51px;
   padding-bottom:82px;
   margin-bottom:69px;
+  margin-top: -6px;
 }
 
 .hero-container{
@@ -357,7 +410,6 @@ body{
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  background-color:#756157;
   text-decoration: none;
   width:376px;
   text-align: center;
@@ -495,6 +547,7 @@ body{
   padding:70px;
   padding-top:35px;
   margin-bottom:50px;
+  margin-top: -6px;
 }
 
 .inner-heder-filter-container{
@@ -602,6 +655,21 @@ body{
 
 .reset{
   background-color: transparent;
+}
+
+.reset:hover{
+  color: rgba(229, 229, 229, 1);
+}
+
+.reset:focus{
+  color:#FFFFFF;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.reset:active{
+  color:rgba(255, 255, 255, 0.3);
+  outline:none;
 }
 
 /* view-filter */
@@ -729,11 +797,6 @@ body{
 
 li a:nth-of-type(2){
   color:#FFFFFF;
-  background-color: #756157;
-}
-
-.current{
-  background-color: #7DB54F;
 }
 
 /* pagination */
