@@ -51,14 +51,13 @@ body{
   margin:0 auto;
   display:flex;
   flex-wrap: wrap;
-  position: relative;
+  z-index: 1;
 }
 
 .logo{
   width:140px;
   margin-right:28px;
 }
-
 
 .logo-header{
   display:block;
@@ -245,7 +244,14 @@ body{
   padding-top:51px;
   padding-bottom:82px;
   margin-bottom:69px;
-  margin-top: -6px;
+  margin-top: -5px;
+  position: relative;
+}
+
+.hero::before{
+  content:url("../images/index-background-figure.svg");
+  position:absolute;
+  bottom: -5px;
 }
 
 .hero-container{
@@ -334,6 +340,29 @@ body{
 
 .advantages-title{
   margin-bottom:62px;
+  position:relative;
+}
+
+.decorative-line-white::after{
+  content:"";
+  width:60px;
+  height:2px;
+  background-color:rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right:50%;
+  margin-right:-30px;
+  top:86px;
+}
+
+.decorative-line-grey::after{
+  content:"";
+  width:60px;
+  height:2px;
+  background-color:rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right:50%;
+  margin-right:-30px;
+  top:86px;
 }
 
 .dark-blue{
@@ -375,26 +404,38 @@ body{
 }
 
 .services-item{
-  width:230px;
-  padding:81px 85px;
+  width:400px;
+  padding:183px 85px 81px 85px;
+  box-sizing: border-box;
+  position: relative;
+
 }
 
-.services-house{
-  background-image:url("../images/icons/services-house.svg");
-  background-size:75px 72px;
+.services-house::before{
+  content:url("../images/icons/services-house.svg");
   background-repeat: no-repeat;
+  position: absolute;
+  top:81px;
+  right: 50%;
+  margin-right: -36px;
 }
 
-.services-food{
-  background-image:url("../images/icons/services-food.svg");
-  background-size:74px 70px;
+.services-food::before{
+  content:url("../images/icons/services-food.svg");
   background-repeat: no-repeat;
+  position: absolute;
+  top:81px;
+  right: 50%;
+  margin-right: -35px;
 }
 
-.services-souvenir{
-  background-image:url("../images/icons/services-souvenir.svg");
-  background-size:74px 70px;
+.services-souvenir::before{
+  content:url("../images/icons/services-souvenir.svg");
   background-repeat: no-repeat;
+  position: absolute;
+  top:79px;
+  right: 50%;
+  margin-right: -38px;
 }
 
 .search-hotel{
@@ -547,7 +588,7 @@ body{
   padding:70px;
   padding-top:35px;
   margin-bottom:50px;
-  margin-top: -6px;
+  margin-top: -5px;
 }
 
 .inner-heder-filter-container{
