@@ -218,7 +218,7 @@ body{
 
 .navigation-link-current{
   text-decoration: underline #756257 solid 2px;
-  text-underline-offset: 20px;
+  text-underline-offset: 18px;
   text-underline-position: under;
 }
 
@@ -250,14 +250,14 @@ body{
   padding-top:51px;
   padding-bottom:82px;
   margin-bottom:69px;
-  margin-top: -5px;
+  margin-top: -6px;
   position: relative;
 }
 
 .hero::before{
   content:url("../images/index-background-figure.svg");
   position:absolute;
-  bottom: -5px;
+  bottom: -4px;
 }
 
 .hero-container{
@@ -397,7 +397,7 @@ body{
   margin-bottom:20px;
 }
 
-.slogan-text{
+.slogan-text-services{
   margin-bottom: 64px;
 }
 
