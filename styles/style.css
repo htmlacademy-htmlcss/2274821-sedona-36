@@ -902,34 +902,35 @@ body{
 }
 
 .view-button-filter-item{
+  margin-right:8px;
+}
+
+.view-button{
   width:48px;
   height: 48px;
-  margin-right:8px;
+  padding:17px 16px;
+  display:flex;
   border:2px solid #E5E5E5;
   border-radius: 4px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .view-button-current{
   border-color:#000000;
 }
 
-.view-button-filter-item:hover{
+.view-button:hover{
   border-color:#000000;
 }
 
-.view-button-filter-item:focus{
-  border-color:#68A2CA;
+.view-button:focus{
+  border: 2px solid #68A2CA;
   outline:none;
 }
 
-.view-button-filter-item:active{
+.view-button:active{
   border-color:#000000;
-}
-
-.view-button{
-  padding:17px 16px;
-  display:flex;
 }
 
 .view-button-filter-list .view-button-filter-item:last-child{
