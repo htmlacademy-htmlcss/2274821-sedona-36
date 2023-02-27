@@ -70,8 +70,10 @@ body{
 .logo:active{
   opacity:0.6;
 }
+
 .logo-header{
   display:block;
+  position:absolute;
 }
 
 .navigation{
@@ -287,14 +289,17 @@ body{
   padding-top:51px;
   padding-bottom:82px;
   margin-bottom:69px;
-  margin-top: -6px;
   position: relative;
 }
 
-.hero::before{
-  content:url("../images/index-background-figure.svg");
+.hero::after{
+  content:"";
+  background-image:url("../images/index-background-figure.svg");
+  background-repeat: no-repeat;
   position:absolute;
-  bottom: -4px;
+  width:1200px;
+  height:57px;
+  bottom:0;
 }
 
 .hero-container{
@@ -681,7 +686,6 @@ body{
   padding:70px;
   padding-top:35px;
   margin-bottom:50px;
-  margin-top: -6px;
 }
 
 .inner-heder-filter-container{
@@ -795,8 +799,70 @@ body{
   margin-right:70px;
 }
 
+.control-checkbox{
+  position: relative;
+  display:block;
+  padding-left: 36px;
+}
+
+.control-mark{
+  position: absolute;
+  width:20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  left:0;
+}
+
+.control-mark-checkbox{
+  border-radius: 4px;
+}
+
+.control-mark-radio{
+  border-radius: 50%;
+}
+
+.checkbox-item[type="checkbox"]:focus+.control-mark-checkbox,
+.radio-item[type="radio"]:focus+.control-mark-radio{
+  outline: 3px solid #83B3D3;
+}
+
+.checkbox-item[type="checkbox"]:active+.control-mark-checkbox,
+.radio-item[type="radio"]:focus+.control-mark-radio{
+  outline: 2px solid #83B3D3;
+}
+
+.checkbox-item[type="checkbox"]:checked+.control-mark-checkbox{
+  background-image: url("../images/icons/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.radio-item[type="radio"]:checked+.control-mark-radio::after{
+  content:"";
+  width:5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+}
+
+.control-label-checkbox,
+.control-label-radio{
+  line-height:23px;
+}
+
+.hotels-filter-item:not(:last-child){
+  margin-bottom:16px;
+}
+
 .type-house{
   margin-right: 140px;
+}
+
+.control-radio{
+  position: relative;
+  display:block;
+  padding-left: 36px;
 }
 
 .hotels-filter-group-price{
@@ -860,17 +926,18 @@ body{
   outline:2px solid #000000;
 }
 
-
 .range-input-min{
   border-bottom-left-radius:4px;
   border-top-left-radius:4px;
   border:none;
+  padding-right:31px;
 }
 
 .range-input-max{
   border-bottom-right-radius:4px;
   border-top-right-radius:4px;
   border:none;
+  padding-right:34px;
 }
 
 .range-scale{
@@ -913,11 +980,6 @@ body{
 .toggle-max{
   top:-8px;
   right:0;
-}
-
-.control-label{
-  line-height: 23px;
-  margin-bottom:16px;
 }
 
 .filter-button{
@@ -987,8 +1049,9 @@ body{
   border:2px solid #E5E5E5;
   border-radius: 4px;
   margin-right:70px;
-  padding:14px 20px 14px 20px;
+  padding:14px 34px 14px 20px;
   box-sizing: border-box;
+  appearance: none;
 }
 
 .view-button-filter-list{
