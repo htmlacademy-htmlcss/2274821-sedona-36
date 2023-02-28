@@ -58,19 +58,6 @@ body{
   margin-right:28px;
 }
 
-.logo:hover{
-  opacity:0.8;
-}
-
-.logo:focus{
-  opacity:0.8;
-  outline:none;
-}
-
-.logo:active{
-  opacity:0.6;
-}
-
 .logo-header{
   display:block;
   position:absolute;
@@ -112,39 +99,25 @@ body{
 .navigation-user-item{
   min-width: 44px;
   min-height: 64px;
-}
-
-.navigation-link-user{
-  display: inline-block;
+  display:inline-block;
 }
 
 .navigation-link-search{
-  padding:20px 13px;
-}
-
-.navigation-icon-state{
-  fill:#000000;
-}
-
-.navigation-link-user:hover .navigation-icon-state{
-  fill:#68A2CA;
-}
-
-.navigation-link-user:focus .navigation-icon-state{
-  fill:#68A2CA;
-}
-
-.navigation-link-user:focus{
-  outline:none;
-}
-
-
-.navigation-link-user:active .navigation-icon-state{
-  fill:rgba(104, 162, 202, 0.3);
+  background-image: url("../images/icons/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:18px;
+  height:18px;
+  padding:23px 13px;
 }
 
 .navigation-user-favorites{
-  padding:20px 12px;
+  background-image: url("../images/icons/favorites.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:18px;
+  height:18px;
+  padding:23px 13px;
   margin-right:20px;
   position: relative;
 }
