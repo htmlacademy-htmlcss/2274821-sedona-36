@@ -916,29 +916,6 @@ body{
   margin-bottom:36px;
 }
 
-.min-price-container{
-  margin-right:2px;
-  position: relative;
-}
-
-.max-price-container{
-  position: relative;
-}
-
-.prompt-price{
-  font:inherit;
-  line-height:24px;
-  color:rgba(0, 0, 0, 0.4)
-}
-
-.prompt-price-min,
-.prompt-price-max{
-  position: absolute;
-  top:50%;
-  margin-top:-14px;
-  right:12px;
-}
-
 .range-input{
   width: 143px;
   padding:12px 20px;
@@ -1011,6 +988,19 @@ body{
 .toggle-max{
   top:-8px;
   right:0;
+}
+
+.filter-price-container{
+  position: relative;
+}
+
+.catalog-filter-label{
+  line-height: 24px;
+  position: absolute;
+  color:rgba(0, 0, 0, 0.5);
+  right:12px;
+  bottom:50%;
+  margin-bottom: -12px;
 }
 
 .filter-button{
@@ -1462,6 +1452,73 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin: 0;
 }
 
-/* .modal-container-close{
+.tooltip-toggle{
+  border:none;
+  background-color:#83B3D3;
+  border-radius: 50%;
+  width:26px;
+  height:26px;
+  padding:0;
+  margin:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip-text{
+  background-color: #333333;
+  color:#FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  display:block;
+  width:256px;
+  border-radius: 10px;
+  padding:17px 20px;
+  position: absolute;
+  right:50%;
+  margin-right:-128px;
+  top:41px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-text-close{
   display:none;
-} */
+}
+
+.tooltip-toggle:hover+.tooltip-text-close,
+.tooltip-toggle:focus+.tooltip-text-close{
+  display:block;
+}
+
+.tooltip-toggle:focus{
+  outline:none;
+}
+
+.tooltip-text::after{
+  content:"";
+  background-image:url("../images/icons/tooltip-vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:19px;
+  height: 9px;
+  position: absolute;
+  top:-9px;
+  right: 50%;
+  margin-right: -10px;
+}
+
+.form-label-icon{
+  position: relative;
+}
+
+.tooltip{
+  position: absolute;
+  margin-left:10px;
+  width:26px;
+  height: 26px;
+}
+
+.modal-container-close{
+  display:none;
+}

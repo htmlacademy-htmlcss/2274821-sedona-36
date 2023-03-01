@@ -129,21 +129,15 @@
                   <legend class="hotels-filter-title">Стоимость, ₽:</legend>
                   <div class="range">
                     <div class="range-wrapper-inputs">
-                      <div class="min-price-container">
-                        <label name="min-price" class="catalog-filter-label">
-                          <span class="visually-hidden">Минимальная цена</span>
-                        </label>
-                        <span class="prompt-price prompt-price-min">от</span>
+                      <div class="filter-price-container">
+                        <label class="catalog-filter-label" for="min-price" name="min-price" >от</label>
                         <input class="range-input range-input-min" id="min-price" type="number" value="0" name="min-price">
                       </div>
-                      <div class="max-price-container">
-                        <label name="max-price" class="catalog-filter-label">
-                          <span class="visually-hidden">Максимальная цена</span>
-                        </label>
-                        <span class="prompt-price prompt-price-max">до</span>
+                      <div class="filter-price-container">
+                        <label class="catalog-filter-label" for="max-price" name="max-price">до</label>
                         <input class="range-input range-input-max" id="max-price" type="number" value="9000" name="max-price">
                       </div>
-                    </div>
+                      </div>
                     <div class="range-scale">
                       <div class="range-bar" style="left:0;width:226px">
                         <button class="range-toggle toggle-min" type="button">
@@ -317,7 +311,7 @@
             </li>
             <li class="footer-social-item">
               <a class="footer-social-button telegram" href="https://t.me/htmlacademy">
-                <svg class="footer-social-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none" viewBox="0 0 18 16">
+                <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none" viewBox="0 0 18 16">
                   <path d="M16.8 1 .8 7c-1 .4-1 1-.2 1.3l4.1 1.3 9.5-6c.5-.3.9-.1.5.2l-7.6 7-.3 4.1c.4 0 .6-.2.8-.4l2-2 4.1 3.1c.8.5 1.3.3 1.5-.7L18 2.2c.3-1-.4-1.6-1.1-1.2Z" />
                 </svg>
                 <span class="visually-hidden">Telegram</span>
@@ -325,7 +319,7 @@
             </li>
             <li class="footer-social-item">
               <a class="footer-social-button youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="footer-social-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none" viewBox="0 0 23 18">
+                <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none" viewBox="0 0 23 18">
                   <path d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6 0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z" />
                 </svg>
                 <span class="visually-hidden">Youtube</span>
@@ -348,7 +342,7 @@
       <div class="modal-container  modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button">
-            <svg class="modal-close-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+            <svg class="modal-close-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
               <path d="M14 1.3 12.7 0 7 5.7 1.3 0 0 1.3 5.7 7 0 12.7 1.3 14 7 8.3l5.7 5.7 1.3-1.3L8.3 7 14 1.3Z"/>
             </svg>
             <span class="visually-hidden">Закрыть</span>
@@ -364,20 +358,29 @@
                 </div>
                 <div class="modal-form-container">
                   <label class="modal-form-label" for="date-end">Дата выезда:</label>
-                  <input class="modal-form-input modal-form-date" id="date-end" type="date" name="date">
+                  <input class="modal-form-input modal-form-date" id="date-end" type="date" name="date" placeholder="Укажите дату">
                   <span class="modal-form-comment">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
                 <div class="modal-form-container-small">
-                  <label class="modal-form-label" for="number-adult">Взрослые:</label>
-                  <input class="modal-form-input modal-form-number" id="number-adult" type="number" name="number-adult" min="0">
+                    <label class="modal-form-label" for="number-adult">Взрослые:</label>
+                    <input class="modal-form-input modal-form-number" id="number-adult" type="number" name="number-adult" min="0">
                 </div>
                 <div class="modal-form-container-small">
-                  <label class="modal-form-label" for="number-children">Дети:</label>
+                  <span class="form-label form-label-icon">
+                    <label class="modal-form-label icon" for="number-children">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" arialabeledby="tooltip-label-number-children">
+                        <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text tooltip-text-close" role="tooltip" id="tooltip-label-number-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
                   <input class="modal-form-input modal-form-number" id="number-children" type="number" name="number-children" min="0">
                 </div>
                 <button class="button button-blue button-modal" type="submit">Найти</button>
               </form>
-
             </div>
           </section>
         </div>
