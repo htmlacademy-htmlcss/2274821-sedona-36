@@ -189,8 +189,6 @@ body{
   background-color: #E5E5E5;
 }
 
-
-
 .button-blue{
   background-color: #82B3D3;
 }
@@ -255,6 +253,8 @@ body{
   width:160px;
   text-align: center;
   margin:auto 0;
+  font-size:16px;
+  line-height: 20px;
 }
 
 .navigation-link-current{
@@ -354,7 +354,7 @@ body{
 
 .advantages-item-block{
   box-sizing: border-box;
-  padding:102px 20px;
+  padding:102px 85px;
   width: 400px;
 }
 
@@ -385,7 +385,6 @@ body{
 
 .advantages-description,
 .advantages-title{
-  max-width:230px;
   margin:0 auto;
 }
 
@@ -423,10 +422,12 @@ body{
 
 .blue{
   background-color:rgba(131, 179, 211, 0.2);
+  padding:112px 85px;
 }
 
 .light-blue{
   background-color:rgba(131, 179, 211, 0.1);
+  padding:112px 85px;
 }
 
 .services-list{
@@ -585,7 +586,6 @@ body{
   font-style: normal;
   color:#000000;
   text-decoration: none;
-  text-align: center;
 }
 
 .footer-social{
@@ -913,7 +913,7 @@ body{
 .range-wrapper-inputs{
   display: flex;
   justify-content: space-between;
-  margin-bottom:36px;
+  margin-bottom:44px;
 }
 
 .range-input{
@@ -1011,6 +1011,8 @@ body{
 .hotels-filter-button{
   text-align:center;
   width:191px;
+  font-size:16px;
+  line-height: 20px;
 }
 
 .select{
@@ -1067,6 +1069,7 @@ body{
   font-weight: 700;
   color:#000000;
   margin:0;
+  text-transform: uppercase;
 }
 
 .select-control{
