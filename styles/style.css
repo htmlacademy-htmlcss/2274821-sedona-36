@@ -183,12 +183,6 @@ body{
   display:inline-block;
 }
 
-.button-blue:disabled,
-.button-brown:disabled,
-.current-green-button:disabled{
-  background-color: #E5E5E5;
-}
-
 .button-blue{
   background-color: #82B3D3;
 }
@@ -241,6 +235,13 @@ body{
 .current-green-button:active{
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue:disabled,
+.button-brown:disabled,
+.current-green-button:disabled{
+  background-color: #E5E5E5;
+  cursor: default;
 }
 
 .navigation-user-button{
@@ -300,7 +301,7 @@ body{
   background-image:url("../images/index-background-figure.svg");
   background-repeat: no-repeat;
   position:absolute;
-  width:1200px;
+  width:100%;
   height:57px;
   bottom:0;
 }
@@ -539,7 +540,7 @@ body{
   background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
   width:452px;
-  padding:12px 20px;
+  padding:14px 20px;
   border:none;
 }
 
@@ -552,7 +553,17 @@ body{
 }
 
 .field:active{
-  border:2px solid #000000;
+  background-color: #F2F2F2;
+}
+
+.field:disabled{
+  background-color:rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+.field:disabled+.subscribe-button{
+  background-color: #E5E5E5;
+  cursor: default;
 }
 
 .subscribe-button{
@@ -792,6 +803,12 @@ body{
   padding:0;
 }
 
+.hotels-filter-group:disabled,
+.hotels-filter-group-price:disabled{
+  opacity:0.5;
+  cursor: default;
+}
+
 .hotels-filter-title{
   font-size: 20px;
   line-height: 24px;
@@ -823,6 +840,7 @@ body{
   height:20px;
   background-color: #FFFFFF;
   left:0;
+  cursor: pointer;
 }
 
 .control-mark-checkbox{
@@ -879,6 +897,7 @@ body{
 
 .control-label{
   line-height:23px;
+  cursor: pointer;
 }
 
 .hotels-filter-item:not(:last-child){
@@ -926,12 +945,22 @@ body{
   background-color:#F2F2F2;
 }
 
+.range-input:hover{
+  background-color: #E6E6E6;
+}
+
 .range-input:focus{
   outline:3px solid #83B3D3;
 }
 
 .range-input:active{
   outline:2px solid #000000;
+}
+
+.range-input:disabled,
+.range-toggle:disabled{
+  opacity:0.5;
+  cursor: default;
 }
 
 .range-input-min{
@@ -998,7 +1027,7 @@ body{
   line-height: 24px;
   position: absolute;
   color:rgba(0, 0, 0, 0.5);
-  right:12px;
+  right:20px;
   bottom:50%;
   margin-bottom: -12px;
 }
@@ -1041,6 +1070,7 @@ body{
 .reset:disabled{
   color:rgba(255, 255, 255, 0.1);
   outline:none;
+  cursor: default;
 }
 
 /* view-filter */
@@ -1080,12 +1110,13 @@ body{
   background-color: #FFFFFF;
   border:2px solid #E5E5E5;
   border-radius: 4px;
-  padding:12px 34px 12px 18px;
+  padding:14px 34px 14px 18px;
   background-image: url("../images/icons/arrow-black.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
   cursor: pointer;
+  height: 49px;
 }
 
 .select-control:hover,
@@ -1100,7 +1131,8 @@ body{
 
 .select-control:disabled{
   border-color:rgba(0, 0, 0, 0.3);
-  color:rgba(0, 0, 0, 0.3)
+  color:rgba(0, 0, 0, 0.3);
+  cursor: default;
 }
 
 .view-button-filter-list{
@@ -1117,13 +1149,13 @@ body{
 }
 
 .view-button{
-  padding:17px 16px;
+  padding:15px 14px;
   display:flex;
   border:2px solid #E5E5E5;
   border-radius: 4px;
   cursor: pointer;
+  box-sizing: border-box;
 }
-
 
 .view-button-current{
   border-color:#000000;
@@ -1162,7 +1194,7 @@ body{
   box-sizing: border-box;
   border:1px solid #E6E6E6;
   border-radius: 4px;
-  padding:20px;
+  padding:19px 20px;
   display:grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: auto repeat(3, min-content);
@@ -1172,20 +1204,27 @@ body{
 
 .hotel-card-link{
   grid-column: 1/-1;
+  display: grid;
+  grid-template-rows: 212px auto;
+  row-gap: 16px;
 }
 
 .hotel-card-image{
   object-fit: contain;
-  margin-bottom:16px;
 }
 
 .hotel-card-price{
   justify-self: end;
 }
 
-.hotel-card-button{
+.hotel-card-button-about{
   text-align:center;
   align-self:center;
+  font-size: 16px;
+}
+
+.hotel-card-button{
+  font-size: 16px;
 }
 
 .hotel-card-rating{
@@ -1392,6 +1431,7 @@ li a:nth-of-type(2){
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
+  position: relative;
 }
 
 .button-modal{
@@ -1419,8 +1459,8 @@ li a:nth-of-type(2){
   background-color: #F2F2F2;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
-  opacity: 0;
+.modal-form-input:hover{
+  background-color: #E6E6E6;
 }
 
 .modal-form-comment{
@@ -1443,6 +1483,46 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .modal-form-number::after{
   position: absolute;
+}
+
+.modal-form-button{
+  width:40px;
+  height: 48px;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form-button-minus{
+  border-radius: 4px 0 0 4px;
+  position: absolute;
+  right:71px;
+}
+
+.modal-form-button-plus{
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  right:0;
+}
+
+.modal-form-button-icon{
+  fill:rgba(117, 97, 87, 0.3);
+}
+
+.modal-form-button:hover .modal-form-button-icon{
+  fill:#000000;
+}
+
+.modal-form-button-minus:hover+.modal-form-number{
+  background-color: #E6E6E6;
+}
+
+.modal-form-button:active .modal-form-button-icon{
+  fill:rgba(117, 97, 87, 0.3);
 }
 
 .button-modal{

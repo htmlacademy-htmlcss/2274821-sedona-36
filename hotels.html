@@ -130,7 +130,7 @@
                   <div class="range">
                     <div class="range-wrapper-inputs">
                       <div class="filter-price-container">
-                        <label class="catalog-filter-label" for="min-price" name="min-price" >от</label>
+                        <label class="catalog-filter-label" for="min-price" name="min-price">от</label>
                         <input class="range-input range-input-min" id="min-price" type="number" value="0" name="min-price">
                       </div>
                       <div class="filter-price-container">
@@ -207,8 +207,8 @@
               </a>
               <span class="hotel-card-description">Гостиница</span>
               <span class="hotel-card-price">От 4000 ₽</span>
-              <a class="hotel-card-button button button-brown" href="#">Подробнee</a>
-              <button class="button button-blue">В избранное</button>
+              <a class="hotel-card-button-about button button-brown" href="#">Подробнee</a>
+              <button class="button button-blue hotel-card-button">В избранное</button>
               <img class="hotel-card-rating-image" src="images/rating-4.svg" width="140" height="37"
                 alt="Категория отеля 4 звезды.">
               <span class="hotel-card-rating">Рейтинг: 8,5</span>
@@ -220,8 +220,8 @@
               </a>
               <span class="hotel-card-description">Гостиница</span>
               <span class="hotel-card-price">От 5000 ₽</span>
-              <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
-              <button class="button button-blue current-green-button">В избранное</button>
+              <a class="hotel-card-button-about button button-brown" href="#">Подробнее</a>
+              <button class="button button-blue hotel-card-button current-green-button">В избранное</button>
               <img class="hotel-card-rating-image" src="images/rating-4.svg" width="140" height="37"
                 alt="Категория отеля 4 звезды.">
               <span class="hotel-card-rating">Рейтинг: 9,2</span>
@@ -233,8 +233,8 @@
               </a>
               <span class="hotel-card-description">Гостиница</span>
               <span class="hotel-card-price">От 2500 ₽</span>
-              <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
-              <button class="button button-blue">В избранное</button>
+              <a class="hotel-card-button-about button button-brown" href="#">Подробнее</a>
+              <button class="button button-blue hotel-card-button">В избранное</button>
               <img class="hotel-card-rating-image" src="images/rating-3.svg" width="140" height="37"
                 alt="Категория отеля 3 звезды.">
               <span class="hotel-card-rating">Рейтинг: 6,9</span>
@@ -246,8 +246,8 @@
               </a>
               <span class="hotel-card-description">Гостиница</span>
               <span class="hotel-card-price">От 1500 ₽</span>
-              <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
-              <button class="button button-blue">В избранное</button>
+              <a class="hotel-card-button-about button button-brown" href="#">Подробнее</a>
+              <button class="button button-blue hotel-card-button">В избранное</button>
               <img class="hotel-card-rating-image" src="images/rating-2.svg" width="140" height="37"
                 alt="Категория отеля 2 звезды.">
               <span class="hotel-card-rating">Рейтинг: 5,0</span>
@@ -286,7 +286,7 @@
         </section>
         <section class="subscribe-inner center" data-test="subscribe">
           <h2 class="subscribe-title subscribe-title-inner">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe-email">
               <span class="visually-hidden">E-mail</span>
@@ -353,18 +353,30 @@
               <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="modal-form-container">
                   <label class="modal-form-label" for="date-start">Дата заезда:</label>
-                  <input class="modal-form-input modal-form-date" id="date-start" type="date" name="date" placeholder="Укажите дату">
+                  <input class="modal-form-input modal-form-date" id="date-start" type="text" name="date" placeholder="Укажите дату" required>
                   <span class="modal-form-comment modal-form-comment-not">Мы не можем отправить вас в прошлое.</span>
                 </div>
                 <div class="modal-form-container">
                   <label class="modal-form-label" for="date-end">Дата выезда:</label>
-                  <input class="modal-form-input modal-form-date" id="date-end" type="date" name="date" placeholder="Укажите дату">
+                  <input class="modal-form-input modal-form-date" id="date-end" type="text" name="date" placeholder="Укажите дату" required>
                   <span class="modal-form-comment">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
                 <div class="modal-form-container-small">
                     <label class="modal-form-label" for="number-adult">Взрослые:</label>
-                    <input class="modal-form-input modal-form-number" id="number-adult" type="number" name="number-adult" min="0">
-                </div>
+                    <button class="modal-form-button modal-form-button-minus" type="button">
+                      <svg class="modal-form-button-icon" aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                      </svg>
+                      <span class="visually-hidden">Уменьшить количество человек</span>
+                    </button>
+                    <input class="modal-form-input modal-form-number" id="number-adult" type="number" name="number-adult" min="0" required>
+                    <button class="modal-form-button modal-form-button-plus" type="button">
+                      <svg class="modal-form-button-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                      </svg>
+                      <span class="visually-hidden">Увеличить количество человек</span>
+                    </button>
+                  </div>
                 <div class="modal-form-container-small">
                   <span class="form-label form-label-icon">
                     <label class="modal-form-label icon" for="number-children">Дети:</label>
@@ -377,7 +389,19 @@
                       <span class="tooltip-text tooltip-text-close" role="tooltip" id="tooltip-label-number-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </span>
                   </span>
-                  <input class="modal-form-input modal-form-number" id="number-children" type="number" name="number-children" min="0">
+                  <button class="modal-form-button modal-form-button-minus" type="button">
+                    <svg class="modal-form-button-icon" aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить количество человек</span>
+                  </button>
+                  <input class="modal-form-input modal-form-number" id="number-children" type="number" name="number-children" min="0" required>
+                  <button class="modal-form-button modal-form-button-plus" type="button">
+                    <svg class="modal-form-button-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                      </svg>
+                    <span class="visually-hidden">Увеличить количество человек</span>
+                  </button>
                 </div>
                 <button class="button button-blue button-modal" type="submit">Найти</button>
               </form>
