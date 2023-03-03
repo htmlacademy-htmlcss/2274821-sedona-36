@@ -56,7 +56,7 @@
               <h1 class="inner-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item item-icon">
-                  <a class="breadcrumbs-link main-icon" href="index.html">
+                  <a class="breadcrumbs-link breadcrumbs-icon" href="index.html">
                     <svg class="breadcrumbs-icon-state" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                       fill="none" viewBox="0 0 13 13">
                       <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
@@ -65,7 +65,7 @@
                     <span class="visually-hidden">Главная</span>
                   </a>
                 </li>
-                <li class="breadcrumbs-item">
+                <li class="breadcrumbs-item item-icon">
                   <a class="breadcrumbs-link breadcrumbs-link-state">Гостиницы</a>
                 </li>
               </ul>
@@ -130,11 +130,11 @@
                   <div class="range">
                     <div class="range-wrapper-inputs">
                       <div class="filter-price-container">
-                        <label class="catalog-filter-label" for="min-price" name="min-price">от</label>
+                        <label class="catalog-filter-label" for="min-price">от</label>
                         <input class="range-input range-input-min" id="min-price" type="number" value="0" name="min-price">
                       </div>
                       <div class="filter-price-container">
-                        <label class="catalog-filter-label" for="max-price" name="max-price">до</label>
+                        <label class="catalog-filter-label" for="max-price">до</label>
                         <input class="range-input range-input-max" id="max-price" type="number" value="9000" name="max-price">
                       </div>
                       </div>
@@ -354,12 +354,12 @@
                 <div class="modal-form-container">
                   <label class="modal-form-label" for="date-start">Дата заезда:</label>
                   <input class="modal-form-input modal-form-date" id="date-start" type="text" name="date" placeholder="Укажите дату" required>
-                  <span class="modal-form-comment modal-form-comment-not">Мы не можем отправить вас в прошлое.</span>
+                  <span class="modal-form-comment modal-form-comment-close modal-form-comment-not">Мы не можем отправить вас в прошлое.</span>
                 </div>
                 <div class="modal-form-container">
                   <label class="modal-form-label" for="date-end">Дата выезда:</label>
                   <input class="modal-form-input modal-form-date" id="date-end" type="text" name="date" placeholder="Укажите дату" required>
-                  <span class="modal-form-comment">На эти даты есть свободные номера. Пока есть.</span>
+                  <span class="modal-form-comment modal-form-comment-close">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
                 <div class="modal-form-container-small">
                     <label class="modal-form-label" for="number-adult">Взрослые:</label>
@@ -381,7 +381,7 @@
                   <span class="form-label form-label-icon">
                     <label class="modal-form-label icon" for="number-children">Дети:</label>
                     <span class="tooltip">
-                      <button class="tooltip-toggle" type="button" arialabeledby="tooltip-label-number-children">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-number-children">
                         <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                         </svg>
