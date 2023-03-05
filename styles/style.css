@@ -394,10 +394,13 @@ body{
 
 .advantages-title{
   margin-bottom: 62px;
+}
+
+.advantages-description{
   position: relative;
 }
 
-.decorative-line-white::after{
+.decorative-line-white::before{
   content: "";
   width: 60px;
   height: 2px;
@@ -405,10 +408,10 @@ body{
   position: absolute;
   right: 50%;
   margin-right: -30px;
-  top: 86px;
+  top: -30px;
 }
 
-.decorative-line-grey::after{
+.decorative-line-grey::before{
   content: "";
   width: 60px;
   height: 2px;
@@ -416,7 +419,7 @@ body{
   position: absolute;
   right: 50%;
   margin-right: -30px;
-  top: 86px;
+  top: -30px;
 }
 
 .dark-blue{
@@ -495,8 +498,7 @@ body{
 }
 
 .search-hotel{
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding:96px 20px 96px 20px;
 }
 
 .search-hotel-text{
@@ -519,8 +521,7 @@ body{
   background-image: url("../images/subscribe-image.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding:96px 20px 104px 20px;
 }
 
 .subscribe-title-main{
@@ -708,7 +709,7 @@ body{
   color: #FFFFFF;
   background-color: #3e75a0;
   background-image: url("../images/hotels-filter-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 70px;
   padding-top: 35px;
@@ -769,6 +770,7 @@ body{
   height: 10px;
   position: absolute;
   right: -18px;
+  top:0;
 }
 
 .breadcrumbs-item:last-child::after{
@@ -1338,8 +1340,7 @@ li a:nth-of-type(2){
 /* subscribe-inner */
 .subscribe-inner{
   color: #000000;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding:96px 20px 104px 20px;
 }
 
 .subscribe-title-inner{
