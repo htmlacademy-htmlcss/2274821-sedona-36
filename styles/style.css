@@ -1636,6 +1636,6 @@ li a:nth-of-type(2){
 }
 
 /* Скрывает или показывает модальное окно*/
-/* .modal-container-close{
+.modal-container-close{
   display: none;
-} */
+}
