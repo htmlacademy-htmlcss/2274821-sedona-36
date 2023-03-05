@@ -698,7 +698,7 @@ body{
   outline: none;
 }
 
-.footer-creator-image:active .logo-html-academy:active{
+.footer-creator-image:active .logo-html-academy{
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -1325,7 +1325,6 @@ li a:nth-of-type(2){
 }
 
 .pagination-item a{
-  text-align: center;
   text-decoration: none;
 }
 
@@ -1397,7 +1396,7 @@ li a:nth-of-type(2){
   background-color: #E6E6E6;
 }
 
-.modal-close-button:focus-visible{
+.modal-close-button:focus{
   outline: 3px solid #83B3D3;
 }
 
@@ -1480,6 +1479,10 @@ li a:nth-of-type(2){
   background-color: #E6E6E6;
 }
 
+.modal-form-input:active{
+  background-color: #F2F2F2;
+}
+
 .modal-form-comment{
   grid-column: 2/-1;
   padding-left: 20px;
@@ -1523,6 +1526,7 @@ li a:nth-of-type(2){
   border-radius: 4px 0 0 4px;
   position: absolute;
   right: 71px;
+  padding:3px;
 }
 
 .modal-form-button-plus{
@@ -1537,6 +1541,16 @@ li a:nth-of-type(2){
 
 .modal-form-button:hover .modal-form-button-icon{
   fill: #000000;
+}
+
+.modal-form-button:focus .modal-form-button-icon{
+  outline:3px solid #82B3D3;
+  border-radius: 4px;
+  fill: #000000;
+}
+
+.modal-form-button:focus{
+  outline:none;
 }
 
 .modal-form-button:active .modal-form-button-icon{
@@ -1622,6 +1636,6 @@ li a:nth-of-type(2){
 }
 
 /* Скрывает или показывает модальное окно*/
-.modal-container-close{
+/* .modal-container-close{
   display: none;
-}
+} */
