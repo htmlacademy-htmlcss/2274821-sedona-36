@@ -131,11 +131,13 @@
                     <div class="range-wrapper-inputs">
                       <div class="filter-price-container">
                         <label class="catalog-filter-label" for="min-price">от</label>
-                        <input class="range-input range-input-min" id="min-price" type="number" value="0" name="min-price">
+                        <input class="range-input range-input-min" id="min-price" type="number" value="0" name="min-price" aria-labelledby="range-text-min">
+                        <span class="visually-hidden" id="range-text-min">Укажите минимальную цену</span>
                       </div>
                       <div class="filter-price-container">
                         <label class="catalog-filter-label" for="max-price">до</label>
-                        <input class="range-input range-input-max" id="max-price" type="number" value="9000" name="max-price">
+                        <input class="range-input range-input-max" id="max-price" type="number" value="9000" name="max-price" aria-labelledby="range-text-max">
+                        <span class="visually-hidden" id="range-text-max">Укажите максимальную цену</span>
                       </div>
                       </div>
                     <div class="range-scale">
@@ -209,7 +211,7 @@
               <span class="hotel-card-price">От 4000 ₽</span>
               <a class="card-button-about button button-brown" href="#">Подробнee</a>
               <button class="button button-blue hotel-card-button">В избранное</button>
-              <img class="hotel-card-rating-image" src="images/rating-4.svg" width="140" height="37"
+              <img class="card-rating-image" src="images/rating-4.svg" width="140" height="37"
                 alt="Категория отеля 4 звезды.">
               <span class="hotel-card-rating">Рейтинг: 8,5</span>
             </li>
@@ -222,7 +224,7 @@
               <span class="hotel-card-price">От 5000 ₽</span>
               <a class="card-button-about button button-brown" href="#">Подробнее</a>
               <button class="button button-blue hotel-card-button current-green-button">В избранном</button>
-              <img class="hotel-card-rating-image" src="images/rating-4.svg" width="140" height="37"
+              <img class="card-rating-image" src="images/rating-4.svg" width="140" height="37"
                 alt="Категория отеля 4 звезды.">
               <span class="hotel-card-rating">Рейтинг: 9,2</span>
             </li>
@@ -235,7 +237,7 @@
               <span class="hotel-card-price">От 2500 ₽</span>
               <a class="card-button-about button button-brown" href="#">Подробнее</a>
               <button class="button button-blue hotel-card-button">В избранное</button>
-              <img class="hotel-card-rating-image" src="images/rating-3.svg" width="140" height="37"
+              <img class="card-rating-image" src="images/rating-3.svg" width="140" height="37"
                 alt="Категория отеля 3 звезды.">
               <span class="hotel-card-rating">Рейтинг: 6,9</span>
             </li>
@@ -248,7 +250,7 @@
               <span class="hotel-card-price">От 1500 ₽</span>
               <a class="card-button-about button button-brown" href="#">Подробнее</a>
               <button class="button button-blue hotel-card-button">В избранное</button>
-              <img class="hotel-card-rating-image" src="images/rating-2.svg" width="140" height="37"
+              <img class="card-rating-image" src="images/rating-2.svg" width="140" height="37"
                 alt="Категория отеля 2 звезды.">
               <span class="hotel-card-rating">Рейтинг: 5,0</span>
             </li>
@@ -339,7 +341,7 @@
           <span class="visually-hidden">Логотип HTML-Academy.</span>
         </a>
       </footer>
-      <div class="modal-container  modal-container-close">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button">
             <svg class="modal-close-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
@@ -381,12 +383,12 @@
                   <span class="form-label form-label-icon">
                     <label class="modal-form-label icon" for="number-children">Дети:</label>
                     <span class="tooltip">
-                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-number-children">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-number-children">
                         <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                         </svg>
                       </button>
-                      <span class="tooltip-text tooltip-text-close" role="tooltip" id="tooltip-label-number-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      <span class="tooltip-text tooltip-text-close" role="tooltip" id="tooltip-number-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </span>
                   </span>
                   <button class="modal-form-button button-less" type="button">
