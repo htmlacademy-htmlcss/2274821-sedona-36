@@ -321,7 +321,7 @@ body {
   background-color: #3e75a0;
   background-image: url("../images/index-background.jpg");
   color: #ffffff;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
